@@ -1,0 +1,10 @@
+.venv/
+p2rank_2.4.2/
+p2rank.tar.gz
+vina
+data/p2rank_output/
+data/test_ligand.pdbqt
+data/test_out.pdbqt
+results/poses/
+__pycache__/
+*.pyc

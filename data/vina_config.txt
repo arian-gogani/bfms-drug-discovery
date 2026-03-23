@@ -1,0 +1,10 @@
+receptor = /Users/ariangogani/bfms-drug-discovery/scripts/../data/3KLN_receptor.pdbqt
+center_x = -73.920
+center_y = 33.010
+center_z = -21.740
+size_x = 25.0
+size_y = 25.0
+size_z = 25.0
+exhaustiveness = 8
+num_modes = 3
+energy_range = 3
