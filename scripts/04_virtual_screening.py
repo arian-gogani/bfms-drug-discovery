@@ -215,7 +215,9 @@ def run_virtual_screening(compound_file, receptor_path, n_workers=4):
 
 
 if __name__ == '__main__':
+    import sys
     receptor_path = os.path.join(DATA_DIR, '3KLN_receptor.pdbqt')
-    compound_file = os.path.join(DATA_DIR, 'compound_library.smi')
+    # Accept compound file as CLI argument, default to compound_library.smi
+    compound_file = sys.argv[1] if len(sys.argv) > 1 else os.path.join(DATA_DIR, 'compound_library.smi')
     os.makedirs(RESULTS_DIR, exist_ok=True)
     run_virtual_screening(compound_file, receptor_path, n_workers=6)
